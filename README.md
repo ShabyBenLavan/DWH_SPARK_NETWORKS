@@ -150,15 +150,8 @@ I did not handle data validation in the scope of this task (missing values etc..
 
 I would choose a star schema in order to model the data.
 Even though this model is not normalized - it is easy to maintained.
-With today's storage costs eve large dimention table are worth keeping.
-Also Tableau supports well a start schema model.
-suggested dimensions for fact_flat
-
-dim_address
-dim_agency
-dim_city
-dim_district
-di
+With current storage costs even  large dimention table are worth keeping since the cost is low.
+Also Tableau supports well a star schema model. it will use the dimentions in order to filter data effectivly.
 
 
 
