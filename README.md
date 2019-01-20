@@ -32,7 +32,21 @@ arn:aws:sqs:xs-east-1:0217120c285:sf-snowpipe-ADDI2DJEQQEcND6JPBXDQ-qa_6lisRAsDF
  - We also need to define in AWS the bucket event :properties->Events and create new event -->ObjectCreate(ALL) -so now we have otomated the json load into the DB.
  
 
-#S2T
+In order to review the fields in the json file I wrote this code:
+```python
+import json
+f= open("d:/immobilienscout24_berlin_20190113.json") 
+kk=[]
+for lines in f:
+    l=json.loads(lines)['data']
+    for k in l.keys():
+        if k not in kk:
+            kk.append(k)
+            
+for i in kk:
+    print (i)
+```    
+
 
 
 # 2. S2T
