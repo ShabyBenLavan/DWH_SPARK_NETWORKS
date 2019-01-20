@@ -32,6 +32,11 @@ arn:aws:sqs:xs-east-1:0217120c285:sf-snowpipe-ADDI2DJEQQEcND6JPBXDQ-qa_6lisRAsDF
  - We also need to define in AWS the bucket event :properties->Events and create new event -->ObjectCreate(ALL) -so now we have otomated the json load into the DB.
  
 
+
+
+
+# 2. S2T
+
 In order to review the fields in the json file I wrote this code:
 ```python
 import json
@@ -48,8 +53,6 @@ for i in kk:
 ```    
 
 
-
-# 2. S2T
 |                                                                            |                                                                                                                                                  |                                                       |                                                                            | 
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------|----------------------------------------------------------------------------| 
 | source column                                                              | data type                                                                                                                                        | target column                                         | remarks                                                                    | 
